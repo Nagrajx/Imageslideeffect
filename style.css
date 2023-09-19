@@ -1,0 +1,38 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #364b63;
+}
+h1{
+    color: aliceblue;
+    font-style: italic;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+.slide{
+    background: url(first.jpg);
+    background-size: cover;
+    height: 450px;
+    width: 800px;
+    box-shadow: 0px 5px 8px rgba(0, 0,0, .3);
+    animation: animate 20s infinite ;
+}
+
+@keyframes animate {
+    20%{
+        background: url(second.jpg);
+    }
+    40%{
+        background: url(third.jpeg);
+    }
+    60%{
+        background: url(fourth.jpg);
+    }
+    80%{
+        background: url(first.jpg);
+    }
+}
